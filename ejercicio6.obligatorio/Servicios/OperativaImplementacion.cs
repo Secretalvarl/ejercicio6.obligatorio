@@ -69,9 +69,9 @@ namespace ejercicio6.obligatorio.Servicios
                         // Intercambia las posiciones entre clientes dependiendo de la edad que tengan
                         if (listaAntigua[columnas +1].Edad > listaAntigua[columnas].Edad)
                         {
-                            int aux = listaAntigua[columnas + 1].Edad;
-                            listaAntigua[columnas + 1].Edad = listaAntigua[columnas].Edad;
-                            listaAntigua[columnas].Edad = aux;
+                            Cliente aux = listaAntigua[columnas + 1];
+                            listaAntigua[columnas + 1] = listaAntigua[columnas];
+                            listaAntigua[columnas] = aux;
 
                             
                         }
